@@ -27,3 +27,7 @@ body::-webkit-scrollbar {
 .hover_effect:hover img {
   transform: scale(1.1) translateZ(50px);
 }
+
+button {
+  font-weight: bold !important;
+}

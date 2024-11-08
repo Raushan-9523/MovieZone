@@ -10,19 +10,25 @@ const Movies = () => {
         justifyContent: "center",
         alignItems: "center",
         flexWrap: "wrap",
-        gap: "2rem",
         textAlign: "center",
-        width: "1200px",
-        backgroundColor: "yellow",
+        width: "1300px",
         margin: "auto",
       }}
     >
       {movieList.map((item) => (
-        <div key={item.id} style={{ maxWidth: "250px" }}>
-          <div style={{ padding: "10px" }}>
-            <img src={item.poster_path} style={{ width: "200px" }} />
+        <div key={item.id} style={{ maxWidth: "280px", textAlign: "center" }}>
+          <div style={{ padding: "10px" }} className="hover_effect">
+            <img
+              src={item.poster_path}
+              style={{
+                width: "200px",
+                borderRadius: "10px",
+                border: "1px solid yellow",
+                height: "280px",
+              }}
+            />
           </div>
-          <h5>{item.title}</h5>
+          <h5 style={{}}>{item.title}</h5>
           <p>{item.release_date}</p>
         </div>
       ))}
